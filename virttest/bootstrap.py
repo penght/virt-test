@@ -677,7 +677,7 @@ def verify_selinux(datadir, imagesdir, isosdir, tmpdir,
         # Disabled or Permissive mode is same result as not installed
         else:
             logging.info("SELinux in permissive or disabled, testing"
-                         "in enforcing mode is highly encourraged.")
+                         "in enforcing mode is highly encouraged.")
     except utils_selinux.SemanageError:
         logging.info("Could not set default SELinux contexts. Please")
         logging.info("consider installing the semanage program then ")
